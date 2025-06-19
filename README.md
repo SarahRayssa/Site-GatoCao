@@ -32,7 +32,7 @@ Este é um site moderno, responsivo e interativo desenvolvido para a clínica ve
 
 ## 📸 Imagem do Projeto 
 
-> !(./IMG/preview.png)
+> ![Screenshot do site](./IMG/preview.png)
 
 ---
 
