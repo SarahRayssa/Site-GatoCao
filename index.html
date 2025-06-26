@@ -17,7 +17,12 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="#home"><img src="IMG/logo.png" alt="Logo da Clínica Gato.Cão"></a> 
+            <a href="#home">
+                <picture>
+                    <source srcset="IMG/logo.webp" type="image/webp">
+                    <img src="IMG/logo.jpg" alt="Logo da Clínica Gato.Cão">
+                </picture>
+            </a>
             </div>
             <button class="menu-toggle" aria-label="Abrir menu">☰</button>
             <nav class="nav-menu">
@@ -31,22 +36,57 @@
                 </ul>
             </nav>
             <div class="social-icons">
-                <a href="https://www.instagram.com/gatopontocaoclinicavet/"><img src="IMG/instagram.png"
-                        alt="Instagram"></a>
-                <a href="#"><img src="IMG/facebook.png" alt="Facebook"></a>
-                <a href="https://wa.me/5519123456789" target="_blank">
-                    <img src="IMG/whatsapp.png" alt="WhatsApp">
+                <a href="https://www.instagram.com/gatopontocaoclinicavet/">
+                    <picture>
+                        <source srcset="IMG/instagram.webp" type="image/webp"><img src="IMG/instagram.jpg"
+                            alt="Instagram">
+                    </picture>
+                </a>
+                <a href="#">
+                    <picture>
+                        <source srcset="IMG/facebook.webp" type="image/webp"><img src="IMG/facebook.jpg" alt="Facebook"
+                            loading="lazy">
+                    </picture>
+                </a>
+                <a href="https://wa.me/5519983020723" target="_blank">
+                    <picture>
+                        <source srcset="IMG/whatsapp.webp" type="image/webp"><img src="IMG/whatsapp.jpg" alt="WhatsApp"
+                            loading="lazy">
+                    </picture>
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- Slides -->
     <section id="home">
         <div class="slider">
-            <div class="slide fade"><img src="IMG/slide1.jpg" alt="Cuidando do seu pet"></div>
-            <div class="slide fade"><img src="IMG/slide2.jpg" alt="Equipe especializada"></div>
-            <div class="slide fade"><img src="IMG/slide3.jpg" alt="Clínica moderna"></div>
-            <div class="slide fade"><img src="IMG/slide4.jpg" alt="Clínica moderna"></div>
+            <!-- Slide 1 -->
+            <div class="slide fade">
+                <picture>
+                    <source srcset="IMG/slide1.webp" type="image/webp">
+                    <img src="IMG/slide1.jpg" alt="Cuidando do seu pet">
+                </picture>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide fade">
+                <picture>
+                    <source srcset="IMG/slide2.webp" type="image/webp">
+                    <img src="IMG/slide2.jpg" alt="Equipe especializada">
+                </picture>
+            </div>
+            <div class="slide fade">
+                <picture>
+                    <source srcset="IMG/slide3.webp" type="image/webp">
+                    <img src="IMG/slide3.jpg" alt="Equipe especializada">
+                </picture>
+            </div>
+            <div class="slide fade">
+                <picture>
+                    <source srcset="IMG/slide4.webp" type="image/webp">
+                    <img src="IMG/slide4.jpg" alt="Equipe especializada">
+                </picture>
+            </div>
         </div>
         <div class="home-content">
             <h1>Bem-vindo à Clínica Veterinária Gato.Cão</h1>
@@ -57,41 +97,60 @@
         </div>
     </section>
 
+    <!-- Serviços -->
     <section id="services">
         <h2>Nossos Serviços</h2>
         <div class="services-container">
             <div class="service-item">
-                <img src="IMG/galeria3.png" alt="Consulta Veterinária">
+                <picture>
+                    <source srcset="IMG/galeria3.webp" type="image/webp">
+                    <img src="IMG/galeria3.jpg" alt="Consulta Veterinária" loading="lazy">
+                </picture>
                 <h3>Consulta Veterinária</h3>
-                <p>Atendimento especializado para cuidar da saúde do seu pet com carinho e dedicação.</p>
+                <p>Atendimento especializado...</p>
             </div>
 
             <div class="service-item">
-                <img src="IMG/galeria2.png" alt="Vacinação">
+                <picture>
+                    <source srcset="IMG/galeria2.webp" type="image/webp">
+                    <img src="IMG/galeria2.jpg" alt="vacinação" loading="lazy">
+                </picture>
                 <h3>Vacinação</h3>
                 <p>Proteja seu pet contra doenças com nosso serviço de vacinação segura e eficiente.</p>
             </div>
 
             <div class="service-item">
-                <img src="IMG/galeria1.1.png" alt="Banho e Tosa">
-                <h3>Banho e Tosa</h3>
-                <p>Higiene e bem-estar para seu pet com profissionais treinados e produtos de qualidade.</p>
+                <picture>
+                    <source srcset="IMG/galeria1.webp" type="image/webp">
+                    <img src="IMG/galeria1.jpg" alt="Internação" loading="lazy">
+                </picture>
+                <h3>Internação</h3>
+                <p>Ambiente seguro e monitorado para recuperação dos pets que necessitam de cuidados especiais.</p>
             </div>
 
             <div class="service-item">
-                <img src="IMG/galeria4.png" alt="Cirurgias">
+                <picture>
+                    <source srcset="IMG/galeria4.webp" type="image/webp">
+                    <img src="IMG/galeria4.jpg" alt="Cirurgias" loading="lazy">
+                </picture>
                 <h3>Cirurgias</h3>
                 <p>Procedimentos cirúrgicos seguros com equipamentos modernos e equipe qualificada.</p>
             </div>
 
             <div class="service-item">
-                <img src="IMG/depoimento.png" alt="Exames">
+                <picture>
+                    <source srcset="IMG/galeria3.webp" type="image/webp">
+                    <img src="IMG/galeria3.jpg" alt="Exames" loading="lazy">
+                </picture>
                 <h3>Exames</h3>
                 <p>Diagnóstico preciso com exames laboratoriais e de imagem para seu pet.</p>
             </div>
 
             <div class="service-item">
-                <img src="IMG/galeria3.png" alt="Internação">
+                <picture>
+                    <source srcset="IMG/galeria1.webp" type="image/webp">
+                    <img src="IMG/galeria1.jpg" alt="Internação" loading="lazy">
+                </picture>
                 <h3>Internação</h3>
                 <p>Ambiente seguro e monitorado para recuperação dos pets que necessitam de cuidados especiais.</p>
             </div>
@@ -104,7 +163,10 @@
             <div class="gallery-item">
                 <h3>Instalações Modernas</h3>
                 <div class="gallery-image">
-                    <img src="IMG/galeria1.1.png" alt="Instalações">
+                    <picture>
+                        <source srcset="IMG/galeria1.webp" type="image/webp">
+                        <img src="IMG/galeria1.jpg" alt="Instalações" loading="lazy">
+                    </picture>
                     <div class="gallery-overlay">
                         <p>Ambiente confortável e equipado para melhor atender seu pet.</p>
                     </div>
@@ -114,7 +176,10 @@
             <div class="gallery-item">
                 <h3>Equipe Especializada</h3>
                 <div class="gallery-image">
-                    <img src="IMG/galeria4.png" alt="Equipe">
+                    <picture>
+                        <source srcset="IMG/galeria4.webp" type="image/webp">
+                        <img src="IMG/galeria4.jpg" alt="Equipe" loading="lazy">
+                    </picture>
                     <div class="gallery-overlay">
                         <p>Profissionais apaixonados e qualificados para cuidar do seu pet.</p>
                     </div>
@@ -124,7 +189,10 @@
             <div class="gallery-item">
                 <h3>Atendimento de Qualidade</h3>
                 <div class="gallery-image">
-                    <img src="IMG/galeria2.png" alt="Atendimento">
+                    <picture>
+                        <source srcset="IMG/galeria2.webp" type="image/webp">
+                        <img src="IMG/galeria2.jpg" alt="Atendimento" loading="lazy">
+                    </picture>
                     <div class="gallery-overlay">
                         <p>Tratamento personalizado e humanizado para cada animal.</p>
                     </div>
@@ -157,7 +225,10 @@
                     atendimento.</p>
             </div>
             <div class="about-image">
-                <img src="IMG/draisabella.png" alt="Fundadora da clínica">
+                <picture>
+                    <source srcset="IMG/draisabella.webp" type="image/webp">
+                    <img src="IMG/draisabella.jpg" alt="Fundadora da clínica" loading="lazy">
+                </picture>
             </div>
         </div>
     </section>
@@ -168,7 +239,10 @@
             <div class="testimonial-item">
                 <h3>Mariana Souza</h3>
                 <div class="testimonial-image">
-                    <img src="IMG/depoimento.png" alt="Cliente 1">
+                    <picture>
+                        <source srcset="IMG/depoimento.webp" type="image/webp">
+                        <img src="IMG/depoimento.jpg" alt="Cliente 1" loading="lazy">
+                    </picture>
                     <div class="testimonial-overlay">
                         <p>"Ótimo atendimento! Meu pet foi tratado com muito carinho e profissionalismo. Recomendo!"</p>
                     </div>
@@ -178,7 +252,10 @@
             <div class="testimonial-item">
                 <h3>Ricardo Lima</h3>
                 <div class="testimonial-image">
-                    <img src="IMG/depoimento.png" alt="Cliente 2">
+                    <picture>
+                        <source srcset="IMG/depoimento.webp" type="image/webp">
+                        <img src="IMG/depoimento.jpg" alt="Cliente 2" loading="lazy">
+                    </picture>
                     <div class="testimonial-overlay">
                         <p>"Ambiente limpo, organizado e uma equipe incrível. Meu cachorro adorou a consulta!"</p>
                     </div>
@@ -188,7 +265,10 @@
             <div class="testimonial-item">
                 <h3>Ana Clara Mendes</h3>
                 <div class="testimonial-image">
-                    <img src="IMG/depoimento.png" alt="Cliente 3">
+                    <picture>
+                        <source srcset="IMG/depoimento.webp" type="image/webp">
+                        <img src="IMG/depoimento.jpg" alt="Cliente 3" loading="lazy">
+                    </picture>
                     <div class="testimonial-overlay">
                         <p>"Super profissionais! Me deram todo o suporte necessário e foram muito atenciosos com meu
                             gato."</p>
@@ -209,17 +289,17 @@
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="name" required placeholder="Digite seu nome">
                     </div>
-                
+
                     <div class="input-group">
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" required placeholder="Coloque seu melhor email">
                     </div>
-                
+
                     <div class="input-group">
                         <label for="message">Mensagem:</label>
                         <textarea id="message" name="message" required placeholder="Digite sua mensagem"></textarea>
                     </div>
-                
+
                     <button type="submit" class="btn-submit">Enviar sua Mensagem</button>
                 </form>
             </div>
@@ -237,20 +317,37 @@
     </section>
 
     <a href="https://wa.me/5519123456789" class="whatsapp-button" target="_blank">
-        <img src="IMG/whatsapp.png" alt="WhatsApp">
+        <picture>
+            <source srcset="IMG/whatsapp.webp" type="image/webp">
+            <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy">
+        </picture>
     </a>
 
     <script src="JS/script.js"></script>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <p>© 2025 Clínica Veterinária Gato.Cão - Todos os direitos reservados.</p>
             <p>Telefone: (19) 98302-0723 | E-mail: contato@gatocao.vet.br</p>
             <div class="footer-social">
-                <a href="#"><img src="IMG/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="IMG/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/gatopontocaoclinicavet/">
+                    <picture>
+                        <source srcset="IMG/instagram.webp" type="image/webp"><img src="IMG/instagram.jpg"
+                            alt="Instagram">
+                    </picture>
+                </a>
+                <a href="#">
+                    <picture>
+                        <source srcset="IMG/facebook.webp" type="image/webp"><img src="IMG/facebook.jpg" alt="Facebook"
+                            loading="lazy">
+                    </picture>
+                </a>
                 <a href="https://wa.me/5519983020723" target="_blank">
-                    <img src="IMG/whatsapp.png" alt="WhatsApp">
+                    <picture>
+                        <source srcset="IMG/whatsapp.webp" type="image/webp"><img src="IMG/whatsapp.jpg" alt="WhatsApp"
+                            loading="lazy">
+                    </picture>
                 </a>
             </div>
         </div>

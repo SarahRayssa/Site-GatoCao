@@ -17,7 +17,7 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.378);
 }
 
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ header {
     padding: 40px 60px;
 }
 
-.logo img{
+.logo img {
     width: 120px;
     height: auto;
     border-radius: 200px;
@@ -91,9 +91,18 @@ nav a:hover {
 
 
 @media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    .nav-menu { display: none; flex-direction: column; }
-    .nav-menu.active { display: flex; }
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
 }
 
 /* SLIDER */
@@ -135,7 +144,8 @@ nav a:hover {
 .slider-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ocupará 100% da altura da tela */
+    height: 100vh;
+    /* Ocupará 100% da altura da tela */
     overflow: hidden;
 }
 
@@ -251,23 +261,26 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 2rem;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-item {
+    background: #592b7c43;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
     width: 300px;
     text-align: center;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-    background: #592b7c43;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item img {
+.service-item picture img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -279,9 +292,9 @@ nav a:hover {
 }
 
 .service-item p {
-    font-size: 1em;
+    font-size: 0.95rem;
     color: #57376b;
-    margin-top: 10px;
+
 }
 
 .service-item:hover {
@@ -394,7 +407,7 @@ nav a:hover {
         transition: opacity 1s ease-in-out;
         text-align: center;
     }
-    
+
     .gallery-image:hover .gallery-overlay {
         opacity: 1;
     }
@@ -496,18 +509,20 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-.contact-form, .contact-map {
+.contact-form,
+.contact-map {
     flex: 1;
     max-width: 500px;
 }
 
-.contact-form h3, .contact-map h3 {
+.contact-form h3,
+.contact-map h3 {
     font-size: 1.5em;
     color: #624F93;
     margin-bottom: 10px;
 }
 
-.input-group input:focus, 
+.input-group input:focus,
 .input-group textarea:focus {
     border-color: #594585;
     outline: none;
@@ -539,7 +554,7 @@ nav a:hover {
     resize: none;
 }
 
-.contact-map iframe{
+.contact-map iframe {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -589,7 +604,8 @@ nav a:hover {
     color: #594585;
     cursor: pointer;
     position: absolute;
-    right: 20px; /* Mantém no canto superior direito */
+    right: 20px;
+    /* Mantém no canto superior direito */
     top: 15px;
 }
 
@@ -611,7 +627,7 @@ nav a:hover {
         flex-direction: row;
         text-align: right;
         padding: 0 120px;
-        
+
     }
 
     .nav-menu ul {
