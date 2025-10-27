@@ -9,6 +9,7 @@ Este é um site moderno, responsivo e interativo desenvolvido para a clínica ve
 - JavaScript (interatividade e efeitos)
 - PHP (envio de formulário por e-mail)
 - Google Maps (localização)
+- Google Reviews (avaliações)
 - GitHub Pages (opcional para publicação)
 
 ---
