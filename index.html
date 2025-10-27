@@ -1,375 +1,627 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clínica veterinária Gato.Cão - Cuidado e carinho para o seu pet.">
-    <meta name="keywords" content="veterinária, pet shop, gatos, cães, animais, saúde animal">
-    <meta name="author" content="Gato.Cão Clínica">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Clínica veterinária Gato.Cão - Cuidado e carinho para o seu pet."
+    />
+    <meta
+      name="keywords"
+      content="veterinária, pet shop, gatos, cães, animais, saúde animal"
+    />
+    <meta name="author" content="Gato.Cão Clínica" />
     <title>Clínica Veterinária Gato.Cão</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="header-container">
-            <div class="logo">
-            <a href="#home">
-                <picture>
-                    <source srcset="IMG/logo.webp" type="image/webp">
-                    <img src="IMG/logo.jpg" alt="Logo da Clínica Gato.Cão">
-                </picture>
-            </a>
-            </div>
-            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#about">Sobre Nós</a></li>
-                    <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/gatopontocaoclinicavet/">
-                    <picture>
-                        <source srcset="IMG/instagram.webp" type="image/webp"><img src="IMG/instagram.jpg"
-                            alt="Instagram">
-                    </picture>
-                </a>
-                <a href="#">
-                    <picture>
-                        <source srcset="IMG/facebook.webp" type="image/webp"><img src="IMG/facebook.jpg" alt="Facebook"
-                            loading="lazy">
-                    </picture>
-                </a>
-                <a href="https://wa.me/5519983020723" target="_blank">
-                    <picture>
-                        <source srcset="IMG/whatsapp.webp" type="image/webp"><img src="IMG/whatsapp.jpg" alt="WhatsApp"
-                            loading="lazy">
-                    </picture>
-                </a>
-            </div>
+      <div class="header-container">
+        <div class="logo">
+          <a href="#home">
+            <picture>
+              <source srcset="IMG/logo.webp" type="image/webp" />
+              <img src="IMG/logo.jpg" alt="Logo da Clínica Gato.Cão" />
+            </picture>
+          </a>
         </div>
+        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/gatopontocaoclinicavet/">
+            <picture>
+              <source srcset="IMG/instagram.webp" type="image/webp" />
+              <img src="IMG/instagram.jpg" alt="Instagram" />
+            </picture>
+          </a>
+          <a href="https://www.facebook.com/gatopontocaoclinicavet">
+            <picture>
+              <source srcset="IMG/facebook.webp" type="image/webp" />
+              <img src="IMG/facebook.jpg" alt="Facebook" loading="lazy" />
+            </picture>
+          </a>
+          <a href="https://wa.me/5519983020723" target="_blank">
+            <picture>
+              <source srcset="IMG/whatsapp.webp" type="image/webp" />
+              <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" />
+            </picture>
+          </a>
+        </div>
+      </div>
     </header>
 
     <!-- Slides -->
     <section id="home">
-        <div class="slider">
-            <!-- Slide 1 -->
-            <div class="slide fade">
-                <picture>
-                    <source srcset="IMG/slide1.webp" type="image/webp">
-                    <img src="IMG/slide1.jpg" alt="Cuidando do seu pet">
-                </picture>
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide fade">
-                <picture>
-                    <source srcset="IMG/slide2.webp" type="image/webp">
-                    <img src="IMG/slide2.jpg" alt="Equipe especializada">
-                </picture>
-            </div>
-            <div class="slide fade">
-                <picture>
-                    <source srcset="IMG/slide3.webp" type="image/webp">
-                    <img src="IMG/slide3.jpg" alt="Equipe especializada">
-                </picture>
-            </div>
-            <div class="slide fade">
-                <picture>
-                    <source srcset="IMG/slide4.webp" type="image/webp">
-                    <img src="IMG/slide4.jpg" alt="Equipe especializada">
-                </picture>
-            </div>
+      <div class="slides">
+        <div class="hero-slide active">
+          <picture>
+            <!-- versão WebP para mobile -->
+            <source
+              media="(max-width: 480px)"
+              srcset="IMG/slide1eqmobile.webp"
+              type="image/webp"
+            />
+            <!-- fallback JPG para mobile -->
+            <source
+              media="(max-width: 480px)"
+              srcset="IMG/slide1eqmobile.png"
+            />
+
+            <!-- versão desktop (última fallback) -->
+            <source srcset="IMG/slide1eq.webp" type="image/webp" />
+            <img
+              src="IMG/slide1eq.png"
+              alt="Cuidando do seu pet"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
-        <div class="home-content">
-            <h1>Bem-vindo à Clínica Veterinária Gato.Cão</h1>
-            <p>Cuidado e carinho para seu pet.</p>
-            <a href="https://wa.me/5519123456789" class="w-button">
-                Agendar Consulta
-            </a>
+        <div class="hero-slide">
+          <picture>
+            <!-- versão WebP para mobile -->
+            <source
+              media="(max-width: 480px)"
+              srcset="IMG/clinica.webp"
+              type="image/webp"
+            />
+            <!-- fallback JPG para mobile -->
+            <source media="(max-width: 480px)" srcset="IMG/slide6.png" />
+
+            <!-- versão desktop (última fallback) -->
+            <source srcset="IMG/clinica.webp" type="image/webp" />
+            <img
+              src="IMG/slide6.png"
+              alt="Cuidando do seu pet"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
+        <div class="hero-slide">
+          <picture>
+            <!-- versão WebP para mobile -->
+            <source
+              media="(max-width: 480px)"
+              srcset="IMG/slide5mobile.webp"
+              type="image/webp"
+            />
+            <!-- fallback JPG para mobile -->
+            <source media="(max-width: 480px)" srcset="IMG/slide5mobile.png" />
+
+            <!-- versão desktop (última fallback) -->
+            <source srcset="IMG/slide5.webp" type="image/webp" />
+            <img
+              src="IMG/slide5.png"
+              alt="Cuidando do seu pet"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="home-content">
+        <h1>Bem-vindo à Clínica Veterinária Gato.Cão</h1>
+        <p>Cuidado e carinho para seu pet.</p>
+        <a href="https://wa.me/5519123456789" class="w-button">
+          Agendar Consulta
+        </a>
+      </div>
     </section>
 
     <!-- Serviços -->
     <section id="services">
-        <h2>Nossos Serviços</h2>
-        <div class="services-container">
-            <div class="service-item">
-                <picture>
-                    <source srcset="IMG/galeria3.webp" type="image/webp">
-                    <img src="IMG/galeria3.jpg" alt="Consulta Veterinária" loading="lazy">
-                </picture>
-                <h3>Consulta Veterinária</h3>
-                <p>Atendimento especializado para cuidar da saúde do seu pet com carinho e dedicação.</p>
-            </div>
-
-            <div class="service-item">
-                <picture>
-                    <source srcset="IMG/galeria2.webp" type="image/webp">
-                    <img src="IMG/galeria2.jpg" alt="vacinação" loading="lazy">
-                </picture>
-                <h3>Vacinação</h3>
-                <p>Proteja seu pet contra doenças com nosso serviço de vacinação segura e eficiente.</p>
-            </div>
-
-            <div class="service-item">
-                <picture>
-                    <source srcset="IMG/galeria1.webp" type="image/webp">
-                    <img src="IMG/galeria1.jpg" alt="Internação" loading="lazy">
-                </picture>
-                <h3>Internação</h3>
-                <p>Ambiente seguro e monitorado para recuperação dos pets que necessitam de cuidados especiais.</p>
-            </div>
-
-            <div class="service-item">
-                <picture>
-                    <source srcset="IMG/galeria4.webp" type="image/webp">
-                    <img src="IMG/galeria4.jpg" alt="Cirurgias" loading="lazy">
-                </picture>
-                <h3>Cirurgias</h3>
-                <p>Procedimentos cirúrgicos seguros com equipamentos modernos e equipe qualificada.</p>
-            </div>
-
-            <div class="service-item">
-                <picture>
-                    <source srcset="IMG/galeria3.webp" type="image/webp">
-                    <img src="IMG/galeria3.jpg" alt="Exames" loading="lazy">
-                </picture>
-                <h3>Exames</h3>
-                <p>Diagnóstico preciso com exames laboratoriais e de imagem para seu pet.</p>
-            </div>
-
-            <div class="service-item">
-                <picture>
-                    <source srcset="IMG/galeria1.webp" type="image/webp">
-                    <img src="IMG/galeria1.jpg" alt="Internação" loading="lazy">
-                </picture>
-                <h3>Internação</h3>
-                <p>Ambiente seguro e monitorado para recuperação dos pets que necessitam de cuidados especiais.</p>
-            </div>
+      <h2>Nossos Serviços</h2>
+      <div class="services-container">
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/atendimento.webp" type="image/webp" />
+            <img src="IMG/atendimento.jpg" alt="Atendimento" loading="lazy" />
+          </picture>
+          <h3>Atendimento</h3>
+          <p>
+            Atendimento individualizado, focado no vínculo veterinário-paciente,
+            com ambientes preparados para cães e gatos. Prezamos por segurança,
+            diagnósticos precisos e muito carinho no cuidado com seu pet.
+          </p>
         </div>
+
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/cirurgia.webp" type="image/webp" />
+            <img src="IMG/cirurgia.jpg" alt="Cirurgias" loading="lazy" />
+          </picture>
+          <h3>Cirurgias</h3>
+          <p>
+            Equipe médico-cirúrgica de excelência, em constante atualização,
+            garantindo segurança e precisão em procedimentos de tecidos moles e
+            ortopedia.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/exames.webp" type="image/webp" />
+            <img src="IMG/exames.jpg" alt="Exames" loading="lazy" />
+          </picture>
+          <h3>Exames</h3>
+          <p>
+            Exames laboratoriais com coleta na própria clínica, garantindo
+            conforto, rapidez e resultados precisos em parceria com laboratórios
+            de excelência.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/pettravel.webp" type="image/webp" />
+            <img src="IMG/pettravel.png" alt="Pet Travel" loading="lazy" />
+          </picture>
+          <h3>Pet Travel</h3>
+          <p>
+            Auxiliamos no processo de emissão de toda a documentação exigida
+            para viagens internacionais com seu pet, garantindo segurança,
+            praticidade e conformidade com as normas internacionais.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/ultrassom.webp" type="image/webp" />
+            <img src="IMG/ultrassom.jpg" alt="ultrassom" loading="lazy" />
+          </picture>
+          <h3>Ultrassom / Raio X</h3>
+          <p>
+            Exames de ultrassom e radiografias realizados na própria clínica por
+            profissionais parceiros, com agendamento rápido e laudos ágeis,
+            priorizando o conforto dos pets e tutores.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/vacina.webp" type="image/webp" />
+            <img src="IMG/vacina.jpg" alt="Vacinas" loading="lazy" />
+          </picture>
+          <h3>Vacinas</h3>
+          <p>
+            Proteção essencial para cães e gatos com vacinas importadas de alta
+            qualidade. Trabalhamos com V10, V4, antirrábica e vacinas especiais
+            como giárdia, gripe canina e leucemia felina (Felv), garantindo
+            saúde e segurança aos pets.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/especialidades.webp" type="image/webp" />
+            <img
+              src="IMG/especialidades.jpg"
+              alt="Especialidades"
+              loading="lazy"
+            />
+          </picture>
+          <h3>Especialidades</h3>
+          <p>
+            Nossa clínica oferece especialidades em
+            <strong>cardiologia, oncologia, ortopedia e nutrição</strong>, com
+            profissionais experientes e tecnologia de ponta para o melhor
+            cuidado do seu pet.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <picture>
+            <source srcset="IMG/aplicativo.webp" type="image/webp" />
+            <img src="IMG/aplicativo.jpg" alt="Aplicativo" loading="lazy" />
+          </picture>
+          <h3>Nosso Aplicativo</h3>
+          <p>
+            Agende consultas, acompanhe vacinas e exames, tudo pelo aplicativo
+            Gato.Cão.
+          </p>
+          <a
+            href="https://play.google.com/store/apps/details?id=br.com.maximizi.gatocao&pli=1"
+            target="_blank"
+            class="btn-app"
+            >Baixar App</a
+          >
+        </div>
+
+        <div class="service-item calendar-card">
+          <div class="slider-inner"></div>
+          <button class="slider-prev">&#10094;</button>
+          <button class="slider-next">&#10095;</button>
+          <a href="#" class="btn-slider">Calendário Preventivo</a>
+        </div>
+      </div>
     </section>
 
+    <!-- GALERIA -->
     <section id="gallery">
-        <h2>Galeria</h2>
-        <div class="gallery-container">
-            <div class="gallery-item">
-                <h3>Instalações Modernas</h3>
-                <div class="gallery-image">
-                    <picture>
-                        <source srcset="IMG/galeria1.webp" type="image/webp">
-                        <img src="IMG/galeria1.jpg" alt="Instalações" loading="lazy">
-                    </picture>
-                    <div class="gallery-overlay">
-                        <p>Ambiente confortável e equipado para melhor atender seu pet.</p>
-                    </div>
-                </div>
+      <h2>Galeria</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <h3>Equipe Especializada</h3>
+          <div class="gallery-image">
+            <picture>
+              <source srcset="IMG/equipeespecializada.webp" type="image/webp" />
+              <img
+                src="IMG/equipeespecializada.jpg"
+                alt="Equipe"
+                loading="lazy"
+              />
+            </picture>
+            <div class="gallery-overlay">
+              <p>
+                Profissionais apaixonados e qualificados para cuidar do seu pet.
+              </p>
             </div>
-
-            <div class="gallery-item">
-                <h3>Equipe Especializada</h3>
-                <div class="gallery-image">
-                    <picture>
-                        <source srcset="IMG/galeria4.webp" type="image/webp">
-                        <img src="IMG/galeria4.jpg" alt="Equipe" loading="lazy">
-                    </picture>
-                    <div class="gallery-overlay">
-                        <p>Profissionais apaixonados e qualificados para cuidar do seu pet.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item">
-                <h3>Atendimento de Qualidade</h3>
-                <div class="gallery-image">
-                    <picture>
-                        <source srcset="IMG/galeria2.webp" type="image/webp">
-                        <img src="IMG/galeria2.jpg" alt="Atendimento" loading="lazy">
-                    </picture>
-                    <div class="gallery-overlay">
-                        <p>Tratamento personalizado e humanizado para cada animal.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="gallery-item">
+          <h3>Convênios</h3>
+          <div class="gallery-image">
+            <picture>
+              <source srcset="IMG/Convenios.webp" type="image/webp" />
+              <img src="IMG/Convenios.png" alt="Convênios" loading="lazy" />
+            </picture>
+            <div class="gallery-overlay">
+              <p>Atendimento de vários convênios para pets.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <h3>Campanhas</h3>
+          <div class="gallery-image">
+            <picture>
+              <source srcset="IMG/Campanha.webp" type="image/webp" />
+              <img src="IMG/Campanha.png" alt="Campanhas" loading="lazy" />
+            </picture>
+            <div class="gallery-overlay">
+              <p>
+                Campanhas de Vacinação, Castração, Periodontal e Prevenção.
+                Agende pelo WhatsApp — cuide quem você ama.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <h3>Sorteio e Ações</h3>
+          <div class="gallery-image">
+            <picture>
+              <source srcset="IMG/galeria4.webp" type="image/webp" />
+              <img
+                src="IMG/galeria4.png"
+                alt="Sorteios e Ações"
+                loading="lazy"
+              />
+            </picture>
+            <div class="gallery-overlay">
+              <p>
+                Sorteios e Ações: Parceiros do bem-estar animal e da comunidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>Sobre Nós</h2>
-                <p>Fundada pela Dra Isabella Pimentel, a clínica Gato.Cão teve sua inauguração em setembro de 2018 com o
-                    objetivo de cuidar com muito carinho dos queridos pets das famílias.</p>
-                <p>Hoje a clínica conta com médicos veterinários clínicos, cirurgiões, anestesistas, especialistas em
-                    cardiologia, oftalmologia, oncologia e medicina integrativa, além de ultrassonografias que vem até
-                    nós, tudo para conforto dos nossos pacientes. A estrutura da clinica foi toda pensada em oferecer o
-                    melhor atendimento dos pets. É composta por salas de atendimento com telas nas janelas, centro
-                    cirúrgico, espera de gatos separada de cães e internação dia. </p>
-                <h3>Missão</h3>
-                <p>Proporcionar cuidados veterinários de alta qualidade, garantindo a saúde, o bem-estar e a felicidade
-                    dos animais, sempre com carinho e respeito.</p>
-
-                <h3>Visão</h3>
-                <p>Ser referência em serviços veterinários, inovando continuamente e mantendo um compromisso com a
-                    excelência no atendimento.</p>
-
-                <h3>Valores</h3>
-                <p>Amor pelos animais, ética profissional, compromisso com a qualidade, inovação e transparência no
-                    atendimento.</p>
-            </div>
-            <div class="about-image">
-                <picture>
-                    <source srcset="IMG/draisabella.webp" type="image/webp">
-                    <img src="IMG/draisabella.jpg" alt="Fundadora da clínica" loading="lazy">
-                </picture>
-            </div>
+      <div class="about-container">
+        <div class="about-text">
+          <h2>Sobre Nós</h2>
+          <p>
+            Fundada pela Dra Isabella Pimentel, a clínica Gato.Cão teve sua
+            inauguração em setembro de 2018 com o objetivo de cuidar com muito
+            carinho dos queridos pets das famílias.
+          </p>
+          <p>
+            Hoje a clínica conta com médicos veterinários clínicos, cirurgiões,
+            anestesistas, especialistas em cardiologia, oftalmologia, oncologia
+            e medicina integrativa, além de ultrassonografias que vem até nós,
+            tudo para conforto dos nossos pacientes.
+          </p>
+          <p>
+            A estrutura da clínica foi toda pensada para oferecer o melhor
+            atendimento. Contamos com salas separadas para cães e gatos, centro
+            cirúrgico completo e ambientes acolhedores.
+          </p>
         </div>
+
+        <div class="about-image">
+          <picture>
+            <source srcset="IMG/clinica.webp" type="image/webp" />
+            <img src="IMG/slide1eq.png" alt="sobre" loading="lazy" />
+          </picture>
+        </div>
+      </div>
+
+      <!-- NOVA SEÇÃO DE BOXES -->
+      <div class="about-values">
+        <div class="value-box">
+          <h3>Missão</h3>
+          <p>
+            Proporcionar cuidados veterinários de alta qualidade, garantindo o
+            bem-estar, saúde e felicidade dos animais com carinho e respeito.
+          </p>
+        </div>
+
+        <div class="value-box">
+          <h3>Visão</h3>
+          <p>
+            Ser referência em serviços veterinários, inovando continuamente e
+            mantendo um compromisso com a excelência no atendimento.
+          </p>
+        </div>
+
+        <div class="value-box">
+          <h3>Valores</h3>
+          <p>
+            Amor pelos animais, ética, compromisso com a qualidade, inovação e
+            transparência em tudo que fazemos.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="testimonials">
-        <h2>Depoimentos</h2>
-        <div class="testimonials-container">
-            <div class="testimonial-item">
-                <h3>Mariana Souza</h3>
-                <div class="testimonial-image">
-                    <picture>
-                        <source srcset="IMG/depoimento.webp" type="image/webp">
-                        <img src="IMG/depoimento.jpg" alt="Cliente 1" loading="lazy">
-                    </picture>
-                    <div class="testimonial-overlay">
-                        <p>"Ótimo atendimento! Meu pet foi tratado com muito carinho e profissionalismo. Recomendo!"</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-item">
-                <h3>Ricardo Lima</h3>
-                <div class="testimonial-image">
-                    <picture>
-                        <source srcset="IMG/depoimento.webp" type="image/webp">
-                        <img src="IMG/depoimento.jpg" alt="Cliente 2" loading="lazy">
-                    </picture>
-                    <div class="testimonial-overlay">
-                        <p>"Ambiente limpo, organizado e uma equipe incrível. Meu cachorro adorou a consulta!"</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial-item">
-                <h3>Ana Clara Mendes</h3>
-                <div class="testimonial-image">
-                    <picture>
-                        <source srcset="IMG/depoimento.webp" type="image/webp">
-                        <img src="IMG/depoimento.jpg" alt="Cliente 3" loading="lazy">
-                    </picture>
-                    <div class="testimonial-overlay">
-                        <p>"Super profissionais! Me deram todo o suporte necessário e foram muito atenciosos com meu
-                            gato."</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Nossa Equipe -->
+    <section id="team">
+      <h2>Nossa Equipe</h2>
+      <div class="team-container">
+        <div class="team-item">
+          <picture>
+            <source srcset="IMG/draisa.webp" type="image/webp" />
+            <img src="IMG/draisa.jpg" alt="Dra. Isabella" />
+          </picture>
+          <div class="team-overlay">
+            <h3>Drª Isabella de Carvalho Dias Pimentel</h3>
+            <p>
+              Casada, mãe da Melissa e do Miguel. Médica veterinária formada
+              pela UEM, especialista em pequenos animais. Ama viajar, patinar,
+              praia, natureza e vive cercada pelos seus bichinhos: as gatinhas:
+              Mimi, Bebê, Mizu, Cabeção e Choroninha e os caninos Medina, Ozzy
+              (nosso cão de guarda) e Pingo.
+            </p>
+          </div>
         </div>
+
+        <div class="team-item">
+          <picture>
+            <source srcset="IMG/dracarla.webp" type="image/webp" />
+            <img src="IMG/dracarla.jpg" alt="Dr. Carla" />
+          </picture>
+          <div class="team-overlay">
+            <h3>Drª Carla Cardozo</h3>
+            <p>
+              Médica veterinária formada pela Unifaj, especialista em nutrição e
+              terapias com Cannabis Medicinal. Mãe dos cães: Theo, Dora e
+              Athena. Ama dançar, ler e se exercitar!
+            </p>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <picture>
+            <source srcset="IMG/dratftnis.webp" type="image/webp" />
+            <img src="IMG/dratftnis.jpg" alt="Dra. Thafnis" />
+          </picture>
+          <div class="team-overlay">
+            <h3>Drª Thafnys Ramos</h3>
+            <p>
+              Formada pela PUC Campinas, atua como clínica geral há 2 anos na Gato.Cão, onde iniciou como estagiária.
+              Mãe do Kiwi e da Ágatha, adora viajar e descobrir novos restaurantes.
+            </p>
+          </div>
+        </div>
+
+        <div class="team-item">
+          <picture>
+            <source srcset="IMG/draolga.webp" type="image/webp" />
+            <img src="IMG/draolga.jpeg" alt="Dra. Olga" />
+          </picture>
+          <div class="team-overlay">
+            <h3>Drª Olga Siqueira</h3>
+            <p>Formada pela Universidade Paulista em 2019.<br>
+        É casada e tutora de muitos pets — os cães Soledad, Odin e Raimundo, e os gatinhos Seu Jorge, Manoel, Cosette, Anastácia, Tibério e Alastor.<br>
+        Apaixonada por cirurgia, felinos e dermatologia. Adora viajar e curtir shows de música!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials">
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div
+        class="elfsight-app-cb1a6811-2772-4913-947d-a1c586c5f442"
+        data-elfsight-app-lazy
+      ></div>
     </section>
 
     <section id="contact">
-        <h2>Entre em Contato</h2>
-        <div class="contact-container">
-            <!-- Formulário -->
-            <div class="contact-form">
-                <h3>Envie uma mensagem</h3>
-                <form id="contact-form" action="PHP/send_email.php" method="POST">
-                    <div class="input-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required placeholder="Digite seu nome">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required placeholder="Coloque seu melhor email">
-                    </div>
-
-                    <div class="input-group">
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" required placeholder="Digite sua mensagem"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Enviar sua Mensagem</button>
-                </form>
+      <h2>Entre em Contato</h2>
+      <div class="contact-container">
+        <!-- Formulário -->
+        <div class="contact-form">
+          <h3>Envie uma mensagem</h3>
+          <form id="contact-form" action="PHP/send_email.php" method="POST">
+            <div class="input-group">
+              <label for="name">Nome:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Digite seu nome"
+              />
             </div>
 
-            <!-- Localização -->
-            <div class="contact-map">
-                <h3>Nosso Endereço</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14704.1001818538!2d-47.21914043261719!3d-22.87553318653057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b9690d57b015%3A0x9eba1767ea5e36d9!2sR.%2021%20de%20Fevereiro%2C%20564%20-%20Jardim%20Mirante%20de%20Sumare%2C%20Hortol%C3%A2ndia%20-%20SP%2C%2013186-200!5e0!3m2!1spt-BR!2sbr!4v1738873640139!5m2!1spt-BR!2sbr"
-                    width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="input-group">
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Coloque seu melhor email"
+              />
             </div>
+
+            <div class="input-group">
+              <label for="message">Mensagem:</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Digite sua mensagem"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Enviar sua Mensagem
+            </button>
+          </form>
         </div>
+
+        <!-- Localização -->
+        <div class="contact-map">
+          <h3>Nosso Endereço</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14704.1001818538!2d-47.21914043261719!3d-22.87553318653057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b9690d57b015%3A0x9eba1767ea5e36d9!2sR.%2021%20de%20Fevereiro%2C%20564%20-%20Jardim%20Mirante%20de%20Sumare%2C%20Hortol%C3%A2ndia%20-%20SP%2C%2013186-200!5e0!3m2!1spt-BR!2sbr!4v1738873640139!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="330"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
     </section>
 
-    <a href="https://wa.me/5519123456789" class="whatsapp-button" target="_blank">
-        <picture>
-            <source srcset="IMG/whatsapp.webp" type="image/webp">
-            <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy">
-        </picture>
+    <a
+      href="https://wa.me/5519123456789"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <picture>
+        <source srcset="IMG/whatsapp.webp" type="image/webp" />
+        <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" />
+      </picture>
     </a>
-
-    <script src="JS/script.js"></script>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <p>© 2025 Clínica Veterinária Gato.Cão - Todos os direitos reservados.</p>
-            <p>Telefone: (19) 98302-0723 | E-mail: contato@gatocao.vet.br</p>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/gatopontocaoclinicavet/">
-                    <picture>
-                        <source srcset="IMG/instagram.webp" type="image/webp"><img src="IMG/instagram.jpg"
-                            alt="Instagram">
-                    </picture>
-                </a>
-                <a href="#">
-                    <picture>
-                        <source srcset="IMG/facebook.webp" type="image/webp"><img src="IMG/facebook.jpg" alt="Facebook"
-                            loading="lazy">
-                    </picture>
-                </a>
-                <a href="https://wa.me/5519983020723" target="_blank">
-                    <picture>
-                        <source srcset="IMG/whatsapp.webp" type="image/webp"><img src="IMG/whatsapp.jpg" alt="WhatsApp"
-                            loading="lazy">
-                    </picture>
-                </a>
-            </div>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#vaccines">Campanhas</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
         </div>
+
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <p>📍 Rua 21 de Fevereiro, 564 - Hortolândia/SP</p>
+          <p>📞 (19) 98302-0723</p>
+          <p>✉ gatopontocaoclinicavet@gmail.com</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Horário de Funcionamento</h3>
+          <p>Segunda a Sexta| <strong>9h - 18h</strong></p>
+          <p>Sábado| <strong>9h - 12h</strong></p>
+          <p>Domingo| <strong>Fechado</strong></p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Siga-nos</h3>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/gatopontocaoclinicavet/"
+              target="_blank"
+            >
+              <picture>
+                <source srcset="IMG/instagram.webp" type="image/webp" />
+                <img src="IMG/instagram.jpg" alt="Instagram" loading="lazy" />
+              </picture>
+            </a>
+            <a href="#">
+              <picture>
+                <source srcset="IMG/facebook.webp" type="image/webp" />
+                <img src="IMG/facebook.jpg" alt="Facebook" loading="lazy" />
+              </picture>
+            </a>
+            <a href="https://wa.me/5519983020723" target="_blank">
+              <picture>
+                <source srcset="IMG/whatsapp.webp" type="image/webp" />
+                <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" />
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 Clínica Veterinária Gato.Cão - Todos os direitos reservados.
+        </p>
+        <p>Desenvolvido por <a href="https://srdev.com.br">SR.DEV</a></p>
+      </div>
+
+      <button id="back-to-top" title="Voltar ao topo">↑</button>
     </footer>
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-            event.preventDefault(); // Evita o recarregamento da página
 
-            // Captura os dados do formulário
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let message = document.getElementById("message").value;
-
-            // Verifica se todos os campos estão preenchidos
-            if (name && email && message) {
-                alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
-                document.getElementById("contact-form").reset(); // Limpa o formulário
-            } else {
-                alert("Por favor, preencha todos os campos.");
-            }
-        });
-    </script>
-</body>
-
+    <script src="JS/script.js"></script>
+  </body>
 </html>

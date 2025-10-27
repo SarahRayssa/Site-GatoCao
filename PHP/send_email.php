@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST["email"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "startec.ref@gmail.com"; // Substitua pelo seu e-mail
+    $to = "gatopontocaoclinicavet@gmail.com"; // Substitua pelo seu e-mail
     $subject = "Nova mensagem do site";
     $headers = "From: $email" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
