@@ -1,0 +1,46 @@
+name: 🚀 Deploy Automático no GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # dispara sempre que fizer push na branch main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Faz o checkout do repositório
+      - name: 📦 Checkout do repositório
+        uses: actions/checkout@v4
+
+      # 2️⃣ Instala Node.js (necessário para compressão e build)
+      - name: ⚙️ Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # 3️⃣ Instala dependências para otimização
+      - name: 📦 Instalar ferramentas de otimização
+        run: |
+          npm install -g imagemin-cli imagemin-mozjpeg imagemin-pngquant clean-css-cli
+
+      # 4️⃣ Otimiza as imagens automaticamente
+      - name: 🖼️ Otimizar imagens
+        run: |
+          mkdir -p IMG-optimized
+          imagemin IMG/* --plugin=mozjpeg --plugin=pngquant > /dev/null
+          echo "✅ Imagens otimizadas!"
+
+      # 5️⃣ Minifica o CSS principal
+      - name: 🎨 Minificar CSS
+        run: |
+          cleancss -o style.min.css style.css
+          echo "✅ CSS minificado!"
+
+      # 6️⃣ Faz o deploy automático no GitHub Pages
+      - name: 🚀 Deploy no GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
