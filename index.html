@@ -20,15 +20,48 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
+  <!-- AVISO DE COOKIES -->
+<div class="cookie-banner" id="cookie-banner">
+  <p>
+    Usamos cookies para melhorar sua experiência em nosso site. Ao continuar, você concorda com nossa
+    <a href="#" id="open-privacy">Política de Privacidade</a>.
+  </p>
+  <button id="accept-cookies">Aceitar</button>
+</div>
 
-  <body>
-    <header>
-      <div class="header-container">
-        <div class="logo">
-          <a href="#home">
+<!-- MODAL DE POLÍTICA DE PRIVACIDADE -->
+<div class="privacy-modal" id="privacy-modal">
+  <div class="privacy-content">
+    <span class="close-modal" id="close-privacy">&times;</span>
+    <h2>Política de Privacidade</h2>
+    <p>
+      A Clínica Veterinária Gato.Cão respeita sua privacidade. Coletamos apenas informações essenciais
+      para melhorar sua experiência e garantir o bom funcionamento do site.
+    </p>
+    <p>
+      Os cookies são utilizados para analisar o tráfego e otimizar nossos serviços. Nenhum dado pessoal
+      é compartilhado com terceiros sem consentimento.
+    </p>
+    <p>
+      Você pode, a qualquer momento, limpar ou desativar os cookies no seu navegador. Isso pode afetar
+      algumas funcionalidades do site.
+    </p>
+    <p>
+      Para mais informações, entre em contato pelo e-mail:
+      <strong>gatopontocaoclinicavet@gmail.com</strong>
+    </p>
+    <button id="close-modal-btn">Fechar</button>
+  </div>
+</div>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="#home">
             <picture>
-              <source srcset="IMG/logo.webp" type="image/webp" />
-              <img src="IMG/logo.jpg" alt="Logo da Clínica Gato.Cão" />
+              <source srcset="IMG/logo.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+              <img src="IMG/logo.jpg" alt="Logo da Clínica Gato.Cão" loading="lazy" decoding="async" />
             </picture>
           </a>
         </div>
@@ -47,20 +80,20 @@
         <div class="social-icons">
           <a href="https://www.instagram.com/gatopontocaoclinicavet/">
             <picture>
-              <source srcset="IMG/instagram.webp" type="image/webp" />
-              <img src="IMG/instagram.jpg" alt="Instagram" />
+              <source srcset="IMG/instagram.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+              <img src="IMG/instagram.jpg" alt="Instagram" loading="lazy" decoding="async" />
             </picture>
           </a>
           <a href="https://www.facebook.com/gatopontocaoclinicavet">
             <picture>
-              <source srcset="IMG/facebook.webp" type="image/webp" />
-              <img src="IMG/facebook.jpg" alt="Facebook" loading="lazy" />
+              <source srcset="IMG/facebook.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+              <img src="IMG/facebook.jpg" alt="Facebook" loading="lazy" decoding="async" />
             </picture>
           </a>
           <a href="https://wa.me/5519983020723" target="_blank">
             <picture>
-              <source srcset="IMG/whatsapp.webp" type="image/webp" />
-              <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" />
+              <source srcset="IMG/whatsapp.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+              <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" decoding="async" />
             </picture>
           </a>
         </div>
@@ -85,7 +118,7 @@
             />
 
             <!-- versão desktop (última fallback) -->
-            <source srcset="IMG/slide1eq.webp" type="image/webp" />
+            <source srcset="IMG/slide1eq.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto" />
             <img
               src="IMG/slide1eq.png"
               alt="Cuidando do seu pet"
@@ -106,7 +139,7 @@
             <source media="(max-width: 480px)" srcset="IMG/slide6.png" />
 
             <!-- versão desktop (última fallback) -->
-            <source srcset="IMG/clinica.webp" type="image/webp" />
+            <source srcset="IMG/clinica.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
             <img
               src="IMG/slide6.png"
               alt="Cuidando do seu pet"
@@ -127,7 +160,7 @@
             <source media="(max-width: 480px)" srcset="IMG/slide5mobile.png" />
 
             <!-- versão desktop (última fallback) -->
-            <source srcset="IMG/slide5.webp" type="image/webp" />
+            <source srcset="IMG/slide5.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
             <img
               src="IMG/slide5.png"
               alt="Cuidando do seu pet"
@@ -152,8 +185,8 @@
       <div class="services-container">
         <div class="service-item">
           <picture>
-            <source srcset="IMG/atendimento.webp" type="image/webp" />
-            <img src="IMG/atendimento.jpg" alt="Atendimento" loading="lazy" />
+            <source srcset="IMG/atendimento.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto" />
+            <img src="IMG/atendimento.jpg" alt="Atendimento" loading="lazy" decoding="async" />
           </picture>
           <h3>Atendimento</h3>
           <p>
@@ -165,8 +198,8 @@
 
         <div class="service-item">
           <picture>
-            <source srcset="IMG/cirurgia.webp" type="image/webp" />
-            <img src="IMG/cirurgia.jpg" alt="Cirurgias" loading="lazy" />
+            <source srcset="IMG/cirurgia.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+            <img src="IMG/cirurgia.jpg" alt="Cirurgias" loading="lazy" decoding="async" />
           </picture>
           <h3>Cirurgias</h3>
           <p>
@@ -178,8 +211,8 @@
 
         <div class="service-item">
           <picture>
-            <source srcset="IMG/exames.webp" type="image/webp" />
-            <img src="IMG/exames.jpg" alt="Exames" loading="lazy" />
+            <source srcset="IMG/exames.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+            <img src="IMG/exames.jpg" alt="Exames" loading="lazy" decoding="async" />
           </picture>
           <h3>Exames</h3>
           <p>
@@ -191,8 +224,8 @@
 
         <div class="service-item">
           <picture>
-            <source srcset="IMG/pettravel.webp" type="image/webp" />
-            <img src="IMG/pettravel.png" alt="Pet Travel" loading="lazy" />
+            <source srcset="IMG/pettravel.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+            <img src="IMG/pettravel.png" alt="Pet Travel" loading="lazy" decoding="async" />
           </picture>
           <h3>Pet Travel</h3>
           <p>
@@ -204,8 +237,8 @@
 
         <div class="service-item">
           <picture>
-            <source srcset="IMG/ultrassom.webp" type="image/webp" />
-            <img src="IMG/ultrassom.jpg" alt="ultrassom" loading="lazy" />
+            <source srcset="IMG/ultrassom.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+            <img src="IMG/ultrassom.jpg" alt="ultrassom" loading="lazy" decoding="async" />
           </picture>
           <h3>Ultrassom / Raio X</h3>
           <p>
@@ -217,8 +250,8 @@
 
         <div class="service-item">
           <picture>
-            <source srcset="IMG/vacina.webp" type="image/webp" />
-            <img src="IMG/vacina.jpg" alt="Vacinas" loading="lazy" />
+            <source srcset="IMG/vacina.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
+            <img src="IMG/vacina.jpg" alt="Vacinas" loading="lazy" decoding="async" />
           </picture>
           <h3>Vacinas</h3>
           <p>
@@ -231,11 +264,11 @@
 
         <div class="service-item">
           <picture>
-            <source srcset="IMG/especialidades.webp" type="image/webp" />
+            <source srcset="IMG/especialidades.webp" type="image/webp" loading="lazy" decoding="async" width="100%" height="auto"/>
             <img
               src="IMG/especialidades.jpg"
               alt="Especialidades"
-              loading="lazy"
+              loading="lazy" decoding="async"
             />
           </picture>
           <h3>Especialidades</h3>
@@ -249,8 +282,8 @@
 
         <div class="service-item">
           <picture>
-            <source srcset="IMG/aplicativo.webp" type="image/webp" />
-            <img src="IMG/aplicativo.jpg" alt="Aplicativo" loading="lazy" />
+            <source srcset="IMG/aplicativo.webp" type="image/webp" loading="lazy" width="100%" height="auto"/>
+            <img src="IMG/aplicativo.jpg" alt="Aplicativo" loading="lazy" decoding="async" />
           </picture>
           <h3>Nosso Aplicativo</h3>
           <p>
@@ -282,11 +315,11 @@
           <h3>Equipe Especializada</h3>
           <div class="gallery-image">
             <picture>
-              <source srcset="IMG/equipeespecializada.webp" type="image/webp" />
+              <source srcset="IMG/equipeespecializada.webp" type="image/webp" loading="lazy" decoding="async" />
               <img
                 src="IMG/equipeespecializada.jpg"
                 alt="Equipe"
-                loading="lazy"
+                loading="lazy" decoding="async"
               />
             </picture>
             <div class="gallery-overlay">
@@ -301,8 +334,8 @@
           <h3>Convênios</h3>
           <div class="gallery-image">
             <picture>
-              <source srcset="IMG/Convenios.webp" type="image/webp" />
-              <img src="IMG/Convenios.png" alt="Convênios" loading="lazy" />
+              <source srcset="IMG/Convenios.webp" type="image/webp" loading="lazy" decoding="async" />
+              <img src="IMG/Convenios.png" alt="Convênios" loading="lazy" decoding="async" />
             </picture>
             <div class="gallery-overlay">
               <p>Atendimento de vários convênios para pets.</p>
@@ -314,8 +347,8 @@
           <h3>Campanhas</h3>
           <div class="gallery-image">
             <picture>
-              <source srcset="IMG/Campanha.webp" type="image/webp" />
-              <img src="IMG/Campanha.png" alt="Campanhas" loading="lazy" />
+              <source srcset="IMG/Campanha.webp" type="image/webp" loading="lazy" decoding="async" />
+              <img src="IMG/Campanha.png" alt="Campanhas" loading="lazy" decoding="async" />
             </picture>
             <div class="gallery-overlay">
               <p>
@@ -330,11 +363,11 @@
           <h3>Sorteio e Ações</h3>
           <div class="gallery-image">
             <picture>
-              <source srcset="IMG/galeria4.webp" type="image/webp" />
+              <source srcset="IMG/galeria4.webp" type="image/webp" loading="lazy" decoding="async" />
               <img
                 src="IMG/galeria4.png"
                 alt="Sorteios e Ações"
-                loading="lazy"
+                loading="lazy" decoding="async"
               />
             </picture>
             <div class="gallery-overlay">
@@ -371,8 +404,8 @@
 
         <div class="about-image">
           <picture>
-            <source srcset="IMG/clinica.webp" type="image/webp" />
-            <img src="IMG/slide1eq.png" alt="sobre" loading="lazy" />
+            <source srcset="IMG/clinica.webp" type="image/webp" loading="lazy" decoding="async" />
+            <img src="IMG/slide1eq.png" alt="sobre" loading="lazy" decoding="async" />
           </picture>
         </div>
       </div>
@@ -411,8 +444,8 @@
       <div class="team-container">
         <div class="team-item">
           <picture>
-            <source srcset="IMG/draisa.webp" type="image/webp" />
-            <img src="IMG/draisa.jpg" alt="Dra. Isabella" />
+            <source srcset="IMG/draisa.webp" type="image/webp" loading="lazy" decoding="async" />
+            <img src="IMG/draisa.jpg" alt="Dra. Isabella" loading="lazy" decoding="async" />
           </picture>
           <div class="team-overlay">
             <h3>Drª Isabella de Carvalho Dias Pimentel</h3>
@@ -428,8 +461,8 @@
 
         <div class="team-item">
           <picture>
-            <source srcset="IMG/dracarla.webp" type="image/webp" />
-            <img src="IMG/dracarla.jpg" alt="Dr. Carla" />
+            <source srcset="IMG/dracarla.webp" type="image/webp" loading="lazy" decoding="async" />
+            <img src="IMG/dracarla.jpg" alt="Dr. Carla" loading="lazy" decoding="async" />
           </picture>
           <div class="team-overlay">
             <h3>Drª Carla Cardozo</h3>
@@ -443,8 +476,8 @@
 
         <div class="team-item">
           <picture>
-            <source srcset="IMG/dratftnis.webp" type="image/webp" />
-            <img src="IMG/dratftnis.jpg" alt="Dra. Thafnis" />
+            <source srcset="IMG/dratftnis.webp" type="image/webp" loading="lazy" decoding="async" />
+            <img src="IMG/dratftnis.jpg" alt="Dra. Thafnis" loading="lazy" decoding="async" />
           </picture>
           <div class="team-overlay">
             <h3>Drª Thafnys Ramos</h3>
@@ -457,8 +490,8 @@
 
         <div class="team-item">
           <picture>
-            <source srcset="IMG/draolga.webp" type="image/webp" />
-            <img src="IMG/draolga.jpeg" alt="Dra. Olga" />
+            <source srcset="IMG/draolga.webp" type="image/webp" loading="lazy" decoding="async" />
+            <img src="IMG/draolga.jpeg" alt="Dra. Olga" loading="lazy" decoding="async" />
           </picture>
           <div class="team-overlay">
             <h3>Drª Olga Siqueira</h3>
@@ -548,8 +581,8 @@
       target="_blank"
     >
       <picture>
-        <source srcset="IMG/whatsapp.webp" type="image/webp" />
-        <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" />
+        <source srcset="IMG/whatsapp.webp" type="image/webp" loading="lazy" decoding="async" />
+        <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" decoding="async" />
       </picture>
     </a>
 
@@ -592,20 +625,20 @@
               target="_blank"
             >
               <picture>
-                <source srcset="IMG/instagram.webp" type="image/webp" />
-                <img src="IMG/instagram.jpg" alt="Instagram" loading="lazy" />
+                <source srcset="IMG/instagram.webp" type="image/webp" loading="lazy" decoding="async" />
+                <img src="IMG/instagram.jpg" alt="Instagram" loading="lazy" decoding="async" />
               </picture>
             </a>
             <a href="#">
               <picture>
-                <source srcset="IMG/facebook.webp" type="image/webp" />
-                <img src="IMG/facebook.jpg" alt="Facebook" loading="lazy" />
+                <source srcset="IMG/facebook.webp" type="image/webp" loading="lazy" decoding="async" />
+                <img src="IMG/facebook.jpg" alt="Facebook" loading="lazy" decoding="async" />
               </picture>
             </a>
             <a href="https://wa.me/5519983020723" target="_blank">
               <picture>
-                <source srcset="IMG/whatsapp.webp" type="image/webp" />
-                <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" />
+                <source srcset="IMG/whatsapp.webp" type="image/webp" loading="lazy" decoding="async" />
+                <img src="IMG/whatsapp.jpg" alt="WhatsApp" loading="lazy" decoding="async" />
               </picture>
             </a>
           </div>
@@ -616,12 +649,14 @@
         <p>
           © 2025 Clínica Veterinária Gato.Cão - Todos os direitos reservados.
         </p>
-        <p>Desenvolvido por <a href="https://srdev.com.br">SR.DEV</a></p>
+        <p>Desenvolvido por <a href="https://sradev.com.br" style="background-color: rgba(0, 0, 0, 0.545); border-radius: 5px; padding: 2px 10px; font-weight: 600;">SRA<span style="color: #0298b3">&lt;</span>DEV<span
+            style="color: #0298b3"
+            >/&gt;</span></a></p>
       </div>
 
       <button id="back-to-top" title="Voltar ao topo">↑</button>
     </footer>
 
-    <script src="JS/script.js"></script>
+    <script src="JS/script.js" defer></script>
   </body>
 </html>

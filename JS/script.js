@@ -303,5 +303,38 @@ function toggleOverlaysOnScroll() {
   });
 }
 
-window.addEventListener("scroll", toggleOverlaysOnScroll);
-toggleOverlaysOnScroll(); 
+// ===== AVISO DE COOKIES =====
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+  const privacyModal = document.getElementById("privacy-modal");
+  const openPrivacy = document.getElementById("open-privacy");
+  const closePrivacy = document.getElementById("close-privacy");
+  const closeModalBtn = document.getElementById("close-modal-btn");
+
+  // Mostrar banner se não aceitou ainda
+  if (!localStorage.getItem("cookiesAccepted")) {
+    setTimeout(() => banner.classList.add("show"), 1000);
+  }
+
+  // Aceitar cookies
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    banner.classList.remove("show");
+  });
+
+  // Abrir modal
+  openPrivacy.addEventListener("click", (e) => {
+    e.preventDefault();
+    privacyModal.classList.add("show");
+  });
+
+  // Fechar modal
+  [closePrivacy, closeModalBtn, privacyModal].forEach((el) => {
+    el.addEventListener("click", (e) => {
+      if (e.target === el || e.target.id === "close-privacy" || e.target.id === "close-modal-btn") {
+        privacyModal.classList.remove("show");
+      }
+    });
+  });
+});

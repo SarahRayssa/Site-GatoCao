@@ -1548,6 +1548,7 @@ footer {
 
   .footer-bottom {
     margin-top: 15px;
+    font-size: 0.9rem;
   }
 
   /* Botão de voltar ao topo e WhatsApp não se sobrepõem */
@@ -1620,4 +1621,172 @@ footer {
 .calendar-card.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* === BANNER DE COOKIES === */
+.cookie-banner {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 100%;
+  transform: translateX(-20%);
+  background: rgba(85, 38, 115, 0.751);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 400px;
+  font-size: 0.95rem;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.cookie-banner.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cookie-banner a {
+  color: #f8d80b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cookie-banner button {
+  background: #f8d80b;
+  color: #562673;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 25px;
+  transition: background 0.3s ease;
+  margin-left: auto;
+}
+
+.cookie-banner button:hover {
+  background: #fff18a;
+}
+
+@media screen and (max-width: 768px) {
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 90%;
+  }
+
+  .cookie-banner button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+}
+
+/* === MODAL DE POLÍTICA === */
+.privacy-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s;
+}
+
+.privacy-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.privacy-content {
+  background: #fff;
+  color: #333;
+  max-width: 600px;
+  width: 90%;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideIn 0.4s ease;
+}
+
+.privacy-content h2 {
+  color: #562673;
+  margin-bottom: 10px;
+}
+
+.privacy-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.privacy-content button {
+  display: block;
+  background: #562673;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 15px auto 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.privacy-content button:hover {
+  background: #7d2ca5;
+}
+
+/* Ícone fechar (X) */
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #562673;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-modal:hover {
+  color: #7d2ca5;
+}
+
+/* Animação suave do modal */
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    bottom: 10px;
+    width: 95%;
+  }
 }
