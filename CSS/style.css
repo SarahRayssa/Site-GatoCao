@@ -320,7 +320,7 @@ nav a:hover {
   cursor: pointer;
   bottom: auto;
   margin-top: 10px;
-  padding: 12px 24px;
+  padding: 12px 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -1254,39 +1254,41 @@ footer {
   transition: background-color 0.3s ease; 
 }
 
-/* ===== NOSSA EQUIPE (MOSAICO) ===== */
-#team,
 #gallery {
-  padding: 20px 20px;
+  padding: 40px 20px;
   background: var(--section-gradient);
   text-align: center;
 }
 
-#team h2,
 #gallery h2 {
   font-size: 2em;
   color: #562673;
   margin-bottom: 30px;
 }
 
-.team-container,
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
-.team-item,
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   color: #481f67;
   margin-bottom: 30px;
+  background: rgba(147, 115, 155, 0.8);
+  height: 100%;
+  max-height: 500px;
   box-shadow: 0 4px 10px rgba(72, 30, 102, 0.536);
 }
+.gallery-item h3 {
+  font-size: 1.8rem;
+  margin: 15px 0 10px;
+  color: #481f67;
+}
 
-.team-item img,
 .gallery-item img {
   width: 100%;
   height: 100%;
@@ -1295,13 +1297,74 @@ footer {
   transition: transform 0.4s ease;
 }
 
-.team-item:hover img,
 .gallery-item:hover img {
   transform: scale(1.05);
 }
 
-.team-overlay,
 .gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  transition: opacity 0.6s ease-in-out, transform 0.3s ease-in-out;
+  padding: 30px 20px;
+  text-align: center;
+  transform: translateY(100%);
+}
+.gallery-item:hover .gallery-overlay{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== NOSSA EQUIPE (MOSAICO) ===== */
+#team {
+  padding: 20px 20px;
+  background: var(--section-gradient);
+  text-align: center;
+}
+
+#team h2 {
+  font-size: 2em;
+  color: #562673;
+  margin-bottom: 30px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  color: #481f67;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(72, 30, 102, 0.536);
+}
+
+.team-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.team-item:hover img {
+  transform: scale(1.05);
+}
+
+.team-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1319,8 +1382,7 @@ footer {
   text-align: center;
 }
 
-.team-item:hover .team-overlay,
-.gallery-item:hover .gallery-overlay {
+.team-item:hover .team-overlay{
   opacity: 1;
   transform: translateY(0);
 }
