@@ -262,6 +262,14 @@ nav a:hover {
   transition: opacity 1s ease-in-out;
 }
 
+.slides-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.358);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
 .hero-slide img {
   width: 100%;
   height: 100%;
